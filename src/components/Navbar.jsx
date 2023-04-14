@@ -13,7 +13,7 @@ const Navbar = () => {
         </Link>
         <ul className="sm:flex hidden gap-8">
           {data.navLinks.map((link) => (
-            <Link to={link.path} key={link.id}>
+            <Link to={link.path} key={link.link}>
               <li className="text-[14px] hover:text-peach" onClick={() => setToggleMenu(false)}>
                 {link.link}
               </li>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="bg-black w-full">
           <ul className="flex flex-col gap-8 px-4 py-8">
             {data.navLinks.map((link) => (
-              <Link to={link.path} key={link.id}>
+              <Link to={link.path} key={link.link}>
                 <li className="text-[20px] text-white" onClick={() => setToggleMenu(false)}>
                   {link.link}
                 </li>
