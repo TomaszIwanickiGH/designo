@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
-    <section className={`${styles.padding} relative mb-[-10rem] mt-12`}>
+    <section className={`${styles.padding} relative mb-[-10rem] xl:mt-12 mt-4`}>
       <div className={`${styles.padding} bg-peach rounded-lg flex lg:flex-row flex-col justify-between items-center bg-no-repeat`} style={{ backgroundImage: `url(${images.bgDesignPagesIntoTablet})` }}>
         <div className="flex flex-col lg:gap-8 gap-6">
           <h2 className="text-white md:text-[40px] text-[32px] lg:text-start text-center">
