@@ -6,7 +6,7 @@ const Designs = () => {
   return (
     <section className={`${styles.padding} flex lg:flex-row flex-col gap-6 mt-12 justify-center`}>
       <Link to="/web-design">
-        <div className="bg-lightPeach rounded-lg h-fit">
+        <div className="bg-lightPeach rounded-lg h-fit" onClick={() => window.scrollTo(0, 0)}>
           <div className="relative hover:cursor-pointer hover:opacity-40">
             <img src={images.imageWebDesignLargeDesktop} alt="web" className="rounded-lg brightness-50 object-cover w-full lg:flex hidden" />
             <img src={images.imageWebDesignTablet} alt="web" className="lg:hidden md:flex hidden w-full rounded-lg brightness-50" />
@@ -23,7 +23,7 @@ const Designs = () => {
 
       <div className="flex flex-col gap-6">
         <Link to="/app-design">
-          <div className="bg-lightPeach rounded-lg">
+          <div className="bg-lightPeach rounded-lg" onClick={() => window.scrollTo(0, 0)}>
             <div className="relative hover:cursor-pointer hover:opacity-40">
               <img src={images.imageAppDesignDesktop} alt="app" className="rounded-lg brightness-50 lg:w-fit w-full lg:flex hidden" />
               <img src={images.imageAppDesignTablet} alt="app" className="lg:hidden md:flex hidden w-full rounded-lg brightness-50" />
@@ -39,7 +39,7 @@ const Designs = () => {
         </Link>
 
         <Link to="/graphic-design">
-          <div className="bg-lightPeach rounded-lg">
+          <div className="bg-lightPeach rounded-lg" onClick={() => window.scrollTo(0, 0)}>
             <div className="relative hover:cursor-pointer hover:opacity-40">
               <img src={images.imageGraphicDesignDesktop} alt="graphic" className="rounded-lg brightness-50 lg:w-fit w-full lg:flex hidden" />
               <img src={images.imageGraphicDesignTablet} alt="graphic" className="lg:hidden md:flex hidden w-full rounded-lg brightness-50" />
