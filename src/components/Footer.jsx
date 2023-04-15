@@ -20,7 +20,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className={`${styles.paddingY} flex md:flex-row flex-col justify-between items-center gap-8 md:text-center text-center`}>
+      <div className={`${styles.paddingY} flex md:flex-row flex-col justify-between items-center gap-8 md:text-start text-center`}>
         <div>
           <p className="text-gray font-[600]">Designo Central Office</p>
           <p className="text-gray">
