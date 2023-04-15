@@ -20,7 +20,7 @@ const Card = ({ image, title, text }) => (
 
 const Cards = ({ designs = data.webDesigns }) => {
   return (
-    <section className={`${styles.padding} xl:grid xl:grid-cols-3 flex flex-col items-center md:gap-8 gap-4 mt-20`}>
+    <section className={`${styles.padding} xl:grid xl:grid-cols-3 place-items-center flex flex-col items-center md:gap-8 gap-4 xl:mt-20 mt-8`}>
       {designs.map((design) => (
         <Card key={design.title} {...design} />
       ))}
