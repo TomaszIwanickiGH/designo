@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className={`${styles.paddingFooter} flex flex-col bg-black`}>
-      <div className={`${styles.paddingY} flex md:flex-row flex-col justify-between items-center border-b-2 border-b-darkGray gap-8 mt-32`}>
+      <div className={`${styles.paddingY} flex md:flex-row flex-col justify-between items-center border-b-2 border-b-darkGray gap-8 lg:mt-24 mt-32`}>
         <Link to="/">
           <img src={images.logoLight} alt="logo" className="w-[200px] h-[25px]" onClick={() => window.scrollTo(0, 0)} />
         </Link>

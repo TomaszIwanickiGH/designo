@@ -15,7 +15,7 @@ const Advantage = ({ image, title, description }) => (
 
 const Advantages = () => {
   return (
-    <section className={`${styles.padding} flex lg:flex-row flex-col justify-between lg:mt-20 mt-[-2rem]`}>
+    <section className={`${styles.padding} flex lg:flex-row flex-col justify-between lg:mt-8 mt-[-2rem]`}>
       {data.advantages.map((adv) => (
         <Advantage key={adv.title} {...adv} />
       ))}
