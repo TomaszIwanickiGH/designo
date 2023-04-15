@@ -1,5 +1,6 @@
 import React from 'react'
 import { styles, images } from '../../constants'
+import { Link } from 'react-router-dom'
 
 const HeroHome = () => {
   return (
@@ -8,10 +9,14 @@ const HeroHome = () => {
         <div className="flex flex-col lg:gap-8 gap-6 xl:w-1/2 w-full xl:py-24 py-12 xl:items-start items-center">
           <h2 className="text-white md:text-[48px] text-[32px] xl:text-start text-center">Award-winning custom designs and digital branding solutions</h2>
           <p className="text-white xl:text-start text-center w-[70%]">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
-          <button className="bg-white hover:bg-lightPeach hover:text-white px-5 py-3 w-[150px] rounded-md font-[550] xl:mx-0 mx-auto">LEARN MORE</button>
+          <Link to="/about">
+            <button className="bg-white hover:bg-lightPeach hover:text-white px-5 py-3 w-[150px] rounded-md font-[550] xl:mx-0 mx-auto z-10" onClick={() => window.scrollTo(0, 0)}>
+              LEARN MORE
+            </button>
+          </Link>
         </div>
         <div className="relative xl:w-1/2 w-full xl:min-h-0 lg:min-h-[600px] md:min-h-[400px] min-h-[300px] md:mt-0 mt-8">
-          <img src={images.bgSmallCircle} alt="circle" className="w-full absolute xl:top-[40px] top-[-25%]" />
+          <img src={images.bgHeroHomeDesktop} alt="circle" className="w-full absolute xl:top-[40px] top-[-25%]" />
           <img src={images.imageHeroPhoneDesktop} alt="phone" className="absolute xl:top-[-40px] lg:top-[-150px] xl:right-[-50px] top-[-100px] w-full" />
         </div>
       </div>
