@@ -1,10 +1,11 @@
 import React from 'react'
-import { Location } from './index'
+import { Header, Locations } from './index'
 
 const LocationsWrapper = () => {
   return (
     <div>
-      <Location />
+      <Header title="Locations" description="This is where you can find us!" />
+      <Locations />
     </div>
   )
 }

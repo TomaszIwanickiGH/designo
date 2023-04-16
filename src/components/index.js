@@ -21,7 +21,7 @@ import HeroAbout from './About/HeroAbout'
 import Description from './About/Description'
 import Countries from './About/Countries'
 
-import Location from './Other/Location'
+import Locations from './Other/Locations'
 import Form from './Other/Form'
 
-export { Navbar, HomeWrapper, WebWrapper, GraphicWrapper, AboutWrapper, AppWrapper, LocationsWrapper, Contact, ContactWrapper, Footer, HeroHome, Designs, Advantages, Header, Cards, OtherDesigns, HeroAbout, Description, Countries, Location, Form }
+export { Navbar, HomeWrapper, WebWrapper, GraphicWrapper, AboutWrapper, AppWrapper, LocationsWrapper, Contact, ContactWrapper, Footer, HeroHome, Designs, Advantages, Header, Cards, OtherDesigns, HeroAbout, Description, Countries, Locations, Form }
