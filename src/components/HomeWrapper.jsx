@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroHome, Designs, Advantages } from './index'
+import { HeroHome, Designs, Advantages, Contact } from './index'
 
 const HomeWrapper = () => {
   return (
@@ -7,6 +7,7 @@ const HomeWrapper = () => {
       <HeroHome />
       <Designs />
       <Advantages />
+      <Contact />
     </div>
   )
 }

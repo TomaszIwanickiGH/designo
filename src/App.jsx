@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-import { Navbar, HomeWrapper, WebWrapper, GraphicWrapper, AboutWrapper, AppWrapper, LocationsWrapper, Contact, ContactWrapper, Footer } from './components'
+import { Navbar, HomeWrapper, WebWrapper, GraphicWrapper, AboutWrapper, AppWrapper, LocationsWrapper, ContactWrapper, Footer } from './components'
 
 const App = () => {
   return (
@@ -16,7 +16,6 @@ const App = () => {
         <Route path="/locations" element={<LocationsWrapper />} />
         <Route path="/contact" element={<ContactWrapper />} />
       </Routes>
-      <Contact />
       <Footer />
     </div>
   )

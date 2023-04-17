@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Cards, OtherDesigns } from './index'
+import { Header, Cards, OtherDesigns, Contact } from './index'
 import { data } from '../constants'
 
 const GraphicWrapper = () => {
@@ -12,6 +12,7 @@ const GraphicWrapper = () => {
       />
       <Cards designs={data.graphicDesigns} />
       <OtherDesigns design1="Web" design2="App" />
+      <Contact />
     </div>
   )
 }

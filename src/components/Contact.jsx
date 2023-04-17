@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
         <div>
           <Link to="/contact">
-            <button className="bg-white hover:bg-lightPeach hover:text-white px-5 py-3 w-[150px] rounded-md font-[550] xl:mx-0 mx-auto z-10 lg:mt-0 my-6" onClick={() => window.scrollTo(0, 0)}>
+            <button className="bg-white hover:bg-lightPeach hover:text-white px-5 py-3 w-[150px] rounded-md font-[550] xl:mx-0 mx-auto z-10 lg:mt-0 md:mb-0 mb-4 mt-8" onClick={() => window.scrollTo(0, 0)}>
               GET IN TOUCH
             </button>
           </Link>

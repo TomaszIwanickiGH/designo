@@ -1,10 +1,11 @@
 import React from 'react'
-import { Header, Locations } from './index'
+import { Locations, Contact } from './index'
 
 const LocationsWrapper = () => {
   return (
     <div>
       <Locations />
+      <Contact />
     </div>
   )
 }
