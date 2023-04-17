@@ -1,10 +1,10 @@
 import React from 'react'
-import { Form, Countries } from './index'
+import { FormHero, Countries } from './index'
 
 const ContactWrapper = () => {
   return (
     <div>
-      <Form />
+      <FormHero />
       <Countries />
     </div>
   )
