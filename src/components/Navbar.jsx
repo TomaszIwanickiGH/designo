@@ -6,7 +6,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
-    <>
+    <div className="relative">
       <nav className={`${styles.padding} flex justify-between items-center`}>
         <Link to="/">
           <img src={images.logoDark} alt="logo" className="w-[200px] h-[25px]" />
@@ -23,7 +23,7 @@ const Navbar = () => {
         <img src={toggleMenu ? images.iconClose : images.iconHamburger} alt="menu" className="sm:hidden flex gap-8" onClick={() => setToggleMenu(!toggleMenu)} />
       </nav>
       {toggleMenu && (
-        <div className="bg-black w-full">
+        <div className="bg-black w-full absolute z-10">
           <ul className="flex flex-col gap-8 px-4 py-8">
             {data.navLinks.map((link) => (
               <Link to={link.path} key={link.link}>
@@ -35,7 +35,7 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-    </>
+    </div>
   )
 }
 
