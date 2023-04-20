@@ -2,10 +2,10 @@ import React from 'react'
 import { styles, images, data } from '../constants'
 import { Link } from 'react-router-dom'
 
-const Footer = () => {
+const Footer = ({ margin, pad = styles.paddingFooter }) => {
   return (
-    <footer className={`${styles.paddingFooter} flex flex-col bg-black`}>
-      <div className={`${styles.paddingY} flex md:flex-row flex-col justify-between items-center border-b-2 border-b-darkGray gap-8 lg:mt-24 mt-32`}>
+    <footer className={`${pad} flex flex-col bg-black`}>
+      <div className={`${styles.paddingY} flex md:flex-row flex-col justify-between items-center border-b-2 border-b-darkGray gap-8 ${margin}`}>
         <Link to="/">
           <img src={images.logoLight} alt="logo" className="w-[200px] h-[25px]" onClick={() => window.scrollTo(0, 0)} />
         </Link>
