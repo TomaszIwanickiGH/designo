@@ -22,7 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-tailwind.config.js
-src/assets
-src/constants
