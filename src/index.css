@@ -14,3 +14,18 @@
 #hover:hover #child {
   color: white;
 }
+
+#name-i:focus + #name-p {
+  display: flex;
+}
+
+#email-i:focus + #email-p {
+  display: flex;
+}
+
+#tel-i:focus + #tel-p {
+  display: flex;
+}
+#area-i:focus + #area-p {
+  display: flex;
+}
