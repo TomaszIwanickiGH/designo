@@ -1,6 +1,8 @@
 import React from 'react'
 import { styles, images } from '../../constants'
 
+import { motion } from 'framer-motion'
+
 const Description = ({
   image = [images.imageHeroAboutWorldClassDesktop, images.imageHeroAboutWorldClassTablet, images.imageHeroAboutWorldClassMobile],
   title = 'World-class talent',
@@ -9,7 +11,17 @@ const Description = ({
   classes = ['xl:flex-row-reverse flex-col-reverse', 'xl:rounded-se-2xl xl:rounded-ee-2xl xl:rounded-es-none md:rounded-es-2xl md:rounded-ee-2xl', 'rounded-ss-2xl rounded-es-2xl', 'rounded-ss-2xl rounded-se-2xl'],
 }) => {
   return (
-    <section className={`${styles.paddingSmall} flex ${classes[0]} xl:mt-24 md:mt-16`}>
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 2 }}
+      variants={{
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: '-40%' },
+      }}
+      className={`${styles.paddingSmall} flex ${classes[0]} xl:mt-24 md:mt-16`}
+    >
       <div className={`${styles.padding} flex flex-col justify-center xl:gap-8 gap-4 bg-veryLightPeach ${classes[1]}`}>
         <h2 className="text-peach md:text-[40px] text-[32px] xl:text-start text-center">{title}</h2>
         <p className="text-black md:text-[16px] text-[15px] xl:text-start text-center xl:mb-0 mb-4">{desc1}</p>
@@ -18,7 +30,7 @@ const Description = ({
       <img src={image[0]} alt="about-hero" className={`${classes[2]} xl:flex hidden`} />
       <img src={image[1]} alt="about-hero" className={`${classes[3]} xl:hidden md:flex hidden`} />
       <img src={image[2]} alt="about-hero" className="md:hidden flex" />
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import { styles, data } from '../../constants'
 
+import { motion } from 'framer-motion'
+
 const Card = ({ image, title, text }) => (
   <div className="flex xl:flex-col md:flex-row flex-col xl:w-[350px] xl:h-[478px] md:w-[689px] md:h-[310px] w-[327px] h-[478px]">
     <img
@@ -21,8 +23,10 @@ const Card = ({ image, title, text }) => (
 const Cards = ({ designs = data.webDesigns }) => {
   return (
     <section className={`${styles.padding} xl:grid xl:grid-cols-3 place-items-center flex flex-col items-center md:gap-8 gap-4 xl:mt-20 mt-8`}>
-      {designs.map((design) => (
-        <Card key={design.title} {...design} />
+      {designs.map((design, index) => (
+        <motion.div initial={{ opacity: 0, x: '-30%' }} animate={{ opacity: 1, x: 0 }} transition={{ delay: index * 0.5, duration: 1 }} key={design.title}>
+          <Card {...design} />
+        </motion.div>
       ))}
     </section>
   )

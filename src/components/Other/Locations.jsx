@@ -1,6 +1,8 @@
 import React from 'react'
 import { styles, images, data } from '../../constants'
 
+import { motion } from 'framer-motion'
+
 const Location = ({ title, office, contact, image }) => (
   <div className="flex md:gap-8 xl:even:flex-row-reverse xl:flex-row flex-col-reverse sm:w-fit w-full">
     <div className={`${styles.padding} bg-veryLightPeach flex flex-col justify-center md:rounded-lg xl:min-w-[730px] bg-no-repeat`} style={{ backgroundImage: `url(${images.bgTwoCircles})` }}>
@@ -26,8 +28,10 @@ const Location = ({ title, office, contact, image }) => (
 const Locations = () => {
   return (
     <section className={`flex flex-col items-center gap-8 lg:mb-8 md:mt-0 mt-4 mb-16`}>
-      {data.locations.map((location) => (
-        <Location key={location.title} {...location} />
+      {data.locations.map((location, index) => (
+        <motion.div initial={{ opacity: 0, y: '-30%' }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.5, duration: 1 }} key={location.title}>
+          <Location {...location} />
+        </motion.div>
       ))}
     </section>
   )
